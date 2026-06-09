@@ -7,42 +7,58 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="gradient-bg"></div>
+        <div class="floating-blob blob-1"></div>
+        <div class="floating-blob blob-2"></div>
+        <div class="floating-blob blob-3"></div>
+        <div class="animated-grid"></div>
+    </div>
+
     <!-- Header -->
     <header class="header">
         <div class="header-container">
             <div class="logo-section">
-                <img src="https://via.placeholder.com/60" alt="Human Biology Logo" class="logo">
-                <h1 class="platform-name">Human Biology</h1>
+                <div class="logo-wrapper">
+                    <img src="https://via.placeholder.com/60" alt="Human Biology Logo" class="logo">
+                    <div class="logo-pulse"></div>
+                </div>
+                <div class="header-text">
+                    <h1 class="platform-name">Human Biology</h1>
+                    <p class="tagline">Master Medical Science</p>
+                </div>
             </div>
             <nav class="navbar">
                 <ul class="nav-menu">
-                    <li><a href="#" data-section="home" class="nav-link active">Home</a></li>
+                    <li><a href="#" data-section="home" class="nav-link active"><span>Home</span></a></li>
                     <li class="dropdown">
-                        <a href="#" class="nav-link">Body Systems ▼</a>
+                        <a href="#" class="nav-link"><span>Body Systems</span> <svg width="12" height="8" viewBox="0 0 12 8" class="dropdown-arrow"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/></svg></a>
                         <div class="dropdown-menu">
-                            <a href="#" data-section="system" data-system="basic">Basic Concepts</a>
-                            <a href="#" data-section="system" data-system="growth">Growth, Development & Genetics</a>
-                            <a href="#" data-section="system" data-system="immune">Immune System</a>
-                            <a href="#" data-section="system" data-system="nervous">Autonomic Nervous System</a>
-                            <a href="#" data-section="system" data-system="integumentary">Integumentary System</a>
-                            <a href="#" data-section="system" data-system="musculo">Musculo-skeletal System</a>
-                            <a href="#" data-section="system" data-system="haemopoietic">Haemopoietic System</a>
-                            <a href="#" data-section="system" data-system="respiratory">Respiratory System</a>
-                            <a href="#" data-section="system" data-system="cardiovascular">Cardiovascular System</a>
-                            <a href="#" data-section="system" data-system="gastrointestinal">Gastrointestinal System</a>
-                            <a href="#" data-section="system" data-system="hepatobiliary">Hepatobiliary System</a>
-                            <a href="#" data-section="system" data-system="renal">Renal & Electrolyte System</a>
-                            <a href="#" data-section="system" data-system="endocrine">Endocrine & Metabolism</a>
-                            <a href="#" data-section="system" data-system="reproductive">Reproductive System</a>
-                            <a href="#" data-section="system" data-system="cns">CNS & Special Senses</a>
+                            <a href="#" data-section="system" data-system="basic"><span class="system-icon">📖</span> Basic Concepts</a>
+                            <a href="#" data-section="system" data-system="growth"><span class="system-icon">🧬</span> Growth, Development & Genetics</a>
+                            <a href="#" data-section="system" data-system="immune"><span class="system-icon">🛡️</span> Immune System</a>
+                            <a href="#" data-section="system" data-system="nervous"><span class="system-icon">⚡</span> Autonomic Nervous System</a>
+                            <a href="#" data-section="system" data-system="integumentary"><span class="system-icon">🧴</span> Integumentary System</a>
+                            <a href="#" data-section="system" data-system="musculo"><span class="system-icon">💪</span> Musculo-skeletal System</a>
+                            <a href="#" data-section="system" data-system="haemopoietic"><span class="system-icon">🩸</span> Haemopoietic System</a>
+                            <a href="#" data-section="system" data-system="respiratory"><span class="system-icon">💨</span> Respiratory System</a>
+                            <a href="#" data-section="system" data-system="cardiovascular"><span class="system-icon">❤️</span> Cardiovascular System</a>
+                            <a href="#" data-section="system" data-system="gastrointestinal"><span class="system-icon">🫘</span> Gastrointestinal System</a>
+                            <a href="#" data-section="system" data-system="hepatobiliary"><span class="system-icon">🫘</span> Hepatobiliary System</a>
+                            <a href="#" data-section="system" data-system="renal"><span class="system-icon">💧</span> Renal & Electrolyte System</a>
+                            <a href="#" data-section="system" data-system="endocrine"><span class="system-icon">⚙️</span> Endocrine & Metabolism</a>
+                            <a href="#" data-section="system" data-system="reproductive"><span class="system-icon">🧬</span> Reproductive System</a>
+                            <a href="#" data-section="system" data-system="cns"><span class="system-icon">🧠</span> CNS & Special Senses</a>
                         </div>
                     </li>
-                    <li><a href="#" data-section="quiz" class="nav-link">Quizzes</a></li>
-                    <li><a href="#" data-section="revision" class="nav-link">Quick Revision</a></li>
-                    <li><a href="#" data-section="updates" class="nav-link">Latest Updates</a></li>
+                    <li><a href="#" data-section="quiz" class="nav-link"><span>Quizzes</span></a></li>
+                    <li><a href="#" data-section="revision" class="nav-link"><span>Quick Revision</span></a></li>
+                    <li><a href="#" data-section="updates" class="nav-link"><span>Updates</span></a></li>
                 </ul>
             </nav>
         </div>
+        <div class="header-underline"></div>
     </header>
 
     <!-- Main Content Area -->
@@ -50,24 +66,70 @@
         <!-- Home Section -->
         <section id="home" class="section-content active">
             <div class="hero">
-                <h2>Welcome to Human Biology</h2>
-                <p>Your Complete Interactive Learning Platform for Medical Students</p>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2 class="hero-title">Welcome to <span class="gradient-text">Human Biology</span></h2>
+                        <p class="hero-subtitle">Your Ultimate Interactive Learning Companion for Medical Excellence</p>
+                        <p class="hero-description">Master 15 comprehensive body systems through engaging content, interactive quizzes, and real-world clinical insights</p>
+                        <button class="cta-button" onclick="navigateToSection('system', 'basic')">
+                            <span>Start Learning</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" class="arrow-icon"><path d="M5 10h10M15 10l-5-5M15 10l-5 5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        </button>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="dna-helix">
+                            <div class="helix-strand strand-1"></div>
+                            <div class="helix-strand strand-2"></div>
+                            <div class="helix-particle particle-1"></div>
+                            <div class="helix-particle particle-2"></div>
+                            <div class="helix-particle particle-3"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15">15</div>
+                        <p class="stat-label">Body Systems</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">100+</div>
+                        <p class="stat-label">Study Topics</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50">50+</div>
+                        <p class="stat-label">Interactive Quizzes</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="24">24/7</div>
+                        <p class="stat-label">Learning Access</p>
+                    </div>
+                </div>
+
                 <div class="hero-cards">
-                    <div class="card" onclick="navigateToSection('system', 'basic')">
-                        <h3>📚 Body Systems</h3>
-                        <p>Explore 15 comprehensive body systems with detailed content</p>
+                    <div class="hero-card card-systems" onclick="navigateToSection('system', 'basic')">
+                        <div class="card-icon">📚</div>
+                        <h3>Body Systems</h3>
+                        <p>Explore 15 comprehensive body systems with detailed content, diagrams, and clinical relevance</p>
+                        <span class="card-arrow">→</span>
                     </div>
-                    <div class="card" onclick="navigateToSection('quiz')">
-                        <h3>✅ Quizzes</h3>
-                        <p>Test your knowledge with interactive quizzes</p>
+                    <div class="hero-card card-quiz" onclick="navigateToSection('quiz')">
+                        <div class="card-icon">✅</div>
+                        <h3>Quizzes</h3>
+                        <p>Test your knowledge with adaptive quizzes and instant feedback</p>
+                        <span class="card-arrow">→</span>
                     </div>
-                    <div class="card" onclick="navigateToSection('revision')">
-                        <h3>🎯 Quick Revision</h3>
-                        <p>Quick revision notes for fast learning</p>
+                    <div class="hero-card card-revision" onclick="navigateToSection('revision')">
+                        <div class="card-icon">🎯</div>
+                        <h3>Quick Revision</h3>
+                        <p>Fast-track learning with concise notes and key concepts</p>
+                        <span class="card-arrow">→</span>
                     </div>
-                    <div class="card" onclick="navigateToSection('updates')">
-                        <h3>📰 Updates</h3>
-                        <p>Stay updated with latest medical findings</p>
+                    <div class="hero-card card-updates" onclick="navigateToSection('updates')">
+                        <div class="card-icon">📰</div>
+                        <h3>Latest Updates</h3>
+                        <p>Stay ahead with recent discoveries in medical science</p>
+                        <span class="card-arrow">→</span>
                     </div>
                 </div>
             </div>
@@ -108,38 +170,88 @@
         <!-- Quizzes Section -->
         <section id="quiz" class="section-content">
             <div class="quiz-container">
-                <h2>Quizzes</h2>
-                <p class="section-intro">Test your knowledge across different body systems</p>
+                <div class="section-header">
+                    <h2>Interactive Quizzes</h2>
+                    <p class="section-subtitle">Test your knowledge and track your progress</p>
+                </div>
                 <div class="quiz-grid">
-                    <div class="quiz-card">
+                    <div class="quiz-card" style="--card-delay: 0.1s">
+                        <div class="quiz-header">
+                            <div class="quiz-icon">❤️</div>
+                            <span class="difficulty beginner">Intermediate</span>
+                        </div>
                         <h3>Cardiovascular System Quiz</h3>
-                        <p>10 questions • Intermediate level</p>
-                        <button class="btn-start">Start Quiz</button>
+                        <p>10 questions about the heart and circulation</p>
+                        <div class="quiz-stats">
+                            <span class="quiz-duration">⏱️ 12 mins</span>
+                            <span class="quiz-difficulty">⭐ Intermediate</span>
+                        </div>
+                        <button class="btn-quiz">Start Quiz</button>
                     </div>
-                    <div class="quiz-card">
+                    <div class="quiz-card" style="--card-delay: 0.2s">
+                        <div class="quiz-header">
+                            <div class="quiz-icon">💨</div>
+                            <span class="difficulty beginner">Beginner</span>
+                        </div>
                         <h3>Respiratory System Quiz</h3>
-                        <p>8 questions • Beginner level</p>
-                        <button class="btn-start">Start Quiz</button>
+                        <p>8 questions about breathing and lungs</p>
+                        <div class="quiz-stats">
+                            <span class="quiz-duration">⏱️ 10 mins</span>
+                            <span class="quiz-difficulty">⭐ Beginner</span>
+                        </div>
+                        <button class="btn-quiz">Start Quiz</button>
                     </div>
-                    <div class="quiz-card">
+                    <div class="quiz-card" style="--card-delay: 0.3s">
+                        <div class="quiz-header">
+                            <div class="quiz-icon">🧠</div>
+                            <span class="difficulty advanced">Advanced</span>
+                        </div>
                         <h3>Nervous System Quiz</h3>
-                        <p>12 questions • Advanced level</p>
-                        <button class="btn-start">Start Quiz</button>
+                        <p>12 questions about neurons and synapses</p>
+                        <div class="quiz-stats">
+                            <span class="quiz-duration">⏱️ 15 mins</span>
+                            <span class="quiz-difficulty">⭐ Advanced</span>
+                        </div>
+                        <button class="btn-quiz">Start Quiz</button>
                     </div>
-                    <div class="quiz-card">
+                    <div class="quiz-card" style="--card-delay: 0.4s">
+                        <div class="quiz-header">
+                            <div class="quiz-icon">🫘</div>
+                            <span class="difficulty beginner">Intermediate</span>
+                        </div>
                         <h3>Digestive System Quiz</h3>
-                        <p>10 questions • Intermediate level</p>
-                        <button class="btn-start">Start Quiz</button>
+                        <p>10 questions about digestion and absorption</p>
+                        <div class="quiz-stats">
+                            <span class="quiz-duration">⏱️ 12 mins</span>
+                            <span class="quiz-difficulty">⭐ Intermediate</span>
+                        </div>
+                        <button class="btn-quiz">Start Quiz</button>
                     </div>
-                    <div class="quiz-card">
+                    <div class="quiz-card" style="--card-delay: 0.5s">
+                        <div class="quiz-header">
+                            <div class="quiz-icon">⚙️</div>
+                            <span class="difficulty beginner">Intermediate</span>
+                        </div>
                         <h3>Endocrine System Quiz</h3>
-                        <p>9 questions • Intermediate level</p>
-                        <button class="btn-start">Start Quiz</button>
+                        <p>9 questions about hormones and metabolism</p>
+                        <div class="quiz-stats">
+                            <span class="quiz-duration">⏱️ 11 mins</span>
+                            <span class="quiz-difficulty">⭐ Intermediate</span>
+                        </div>
+                        <button class="btn-quiz">Start Quiz</button>
                     </div>
-                    <div class="quiz-card">
+                    <div class="quiz-card" style="--card-delay: 0.6s">
+                        <div class="quiz-header">
+                            <div class="quiz-icon">🛡️</div>
+                            <span class="difficulty advanced">Advanced</span>
+                        </div>
                         <h3>Immune System Quiz</h3>
-                        <p>11 questions • Advanced level</p>
-                        <button class="btn-start">Start Quiz</button>
+                        <p>11 questions about defense mechanisms</p>
+                        <div class="quiz-stats">
+                            <span class="quiz-duration">⏱️ 14 mins</span>
+                            <span class="quiz-difficulty">⭐ Advanced</span>
+                        </div>
+                        <button class="btn-quiz">Start Quiz</button>
                     </div>
                 </div>
             </div>
@@ -148,38 +260,76 @@
         <!-- Quick Revision Section -->
         <section id="revision" class="section-content">
             <div class="revision-container">
-                <h2>Quick Revision</h2>
-                <p class="section-intro">Quick reference notes for all body systems</p>
+                <div class="section-header">
+                    <h2>Quick Revision</h2>
+                    <p class="section-subtitle">Master key concepts with concise study notes</p>
+                </div>
                 <div class="revision-grid">
-                    <div class="revision-card">
+                    <div class="revision-card" style="--card-delay: 0.1s">
+                        <div class="revision-number">01</div>
+                        <div class="card-icon large">❤️</div>
                         <h3>Cardiovascular System</h3>
-                        <p>Heart structure, blood flow, cardiac cycle</p>
-                        <a href="#" class="btn-download">View Notes</a>
+                        <p>Heart anatomy, blood flow, cardiac cycle dynamics</p>
+                        <div class="revision-tags">
+                            <span class="tag">Anatomy</span>
+                            <span class="tag">Physiology</span>
+                        </div>
+                        <button class="btn-view">View Notes</button>
                     </div>
-                    <div class="revision-card">
+                    <div class="revision-card" style="--card-delay: 0.2s">
+                        <div class="revision-number">02</div>
+                        <div class="card-icon large">💨</div>
                         <h3>Respiratory System</h3>
-                        <p>Anatomy, gas exchange, breathing mechanism</p>
-                        <a href="#" class="btn-download">View Notes</a>
+                        <p>Lung anatomy, gas exchange, breathing mechanics</p>
+                        <div class="revision-tags">
+                            <span class="tag">Gas Exchange</span>
+                            <span class="tag">Mechanics</span>
+                        </div>
+                        <button class="btn-view">View Notes</button>
                     </div>
-                    <div class="revision-card">
+                    <div class="revision-card" style="--card-delay: 0.3s">
+                        <div class="revision-number">03</div>
+                        <div class="card-icon large">🧠</div>
                         <h3>Nervous System</h3>
-                        <p>Brain, spinal cord, nerves, synapses</p>
-                        <a href="#" class="btn-download">View Notes</a>
+                        <p>Brain structure, spinal cord, neurons, synapses</p>
+                        <div class="revision-tags">
+                            <span class="tag">Neurology</span>
+                            <span class="tag">Signals</span>
+                        </div>
+                        <button class="btn-view">View Notes</button>
                     </div>
-                    <div class="revision-card">
+                    <div class="revision-card" style="--card-delay: 0.4s">
+                        <div class="revision-number">04</div>
+                        <div class="card-icon large">🫘</div>
                         <h3>Digestive System</h3>
-                        <p>Organs, digestion process, absorption</p>
-                        <a href="#" class="btn-download">View Notes</a>
+                        <p>GI organs, digestion process, nutrient absorption</p>
+                        <div class="revision-tags">
+                            <span class="tag">Digestion</span>
+                            <span class="tag">Absorption</span>
+                        </div>
+                        <button class="btn-view">View Notes</button>
                     </div>
-                    <div class="revision-card">
+                    <div class="revision-card" style="--card-delay: 0.5s">
+                        <div class="revision-number">05</div>
+                        <div class="card-icon large">⚙️</div>
                         <h3>Endocrine System</h3>
-                        <p>Hormones, glands, regulation</p>
-                        <a href="#" class="btn-download">View Notes</a>
+                        <p>Hormones, glands, metabolic regulation</p>
+                        <div class="revision-tags">
+                            <span class="tag">Hormones</span>
+                            <span class="tag">Metabolism</span>
+                        </div>
+                        <button class="btn-view">View Notes</button>
                     </div>
-                    <div class="revision-card">
+                    <div class="revision-card" style="--card-delay: 0.6s">
+                        <div class="revision-number">06</div>
+                        <div class="card-icon large">💪</div>
                         <h3>Skeletal System</h3>
                         <p>Bones, joints, muscle interactions</p>
-                        <a href="#" class="btn-download">View Notes</a>
+                        <div class="revision-tags">
+                            <span class="tag">Skeleton</span>
+                            <span class="tag">Movement</span>
+                        </div>
+                        <button class="btn-view">View Notes</button>
                     </div>
                 </div>
             </div>
@@ -188,32 +338,74 @@
         <!-- Latest Updates Section -->
         <section id="updates" class="section-content">
             <div class="updates-container">
-                <h2>Latest Updates</h2>
-                <p class="section-intro">Recent discoveries and updates in medical science</p>
+                <div class="section-header">
+                    <h2>Latest Updates</h2>
+                    <p class="section-subtitle">Stay informed with recent discoveries in medical science</p>
+                </div>
                 <div class="updates-list">
-                    <div class="update-item">
-                        <div class="update-date">June 2024</div>
-                        <h3>New Insights into Immune Response</h3>
-                        <p>Recent studies reveal new mechanisms of T-cell activation in combating viral infections...</p>
-                        <a href="#" class="read-more">Read More →</a>
+                    <div class="update-item" style="--item-delay: 0.1s">
+                        <div class="update-timeline">
+                            <div class="timeline-marker"></div>
+                        </div>
+                        <div class="update-content">
+                            <div class="update-header">
+                                <span class="update-date">📅 June 2024</span>
+                                <span class="update-category">Immunology</span>
+                            </div>
+                            <h3>Breakthrough in Immune Response Mechanisms</h3>
+                            <p>Recent studies reveal innovative mechanisms of T-cell activation and new strategies for combating viral infections through enhanced immune response.</p>
+                            <div class="update-footer">
+                                <a href="#" class="read-more">Read Full Article →</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="update-item">
-                        <div class="update-date">May 2024</div>
-                        <h3>Cardiovascular Disease Prevention</h3>
-                        <p>Breakthrough research on preventive measures and lifestyle modifications for heart health...</p>
-                        <a href="#" class="read-more">Read More →</a>
+                    <div class="update-item" style="--item-delay: 0.2s">
+                        <div class="update-timeline">
+                            <div class="timeline-marker"></div>
+                        </div>
+                        <div class="update-content">
+                            <div class="update-header">
+                                <span class="update-date">📅 May 2024</span>
+                                <span class="update-category">Cardiology</span>
+                            </div>
+                            <h3>Advanced Cardiovascular Disease Prevention</h3>
+                            <p>Breakthrough research on preventive measures and lifestyle modifications for heart health, with new clinical protocols showing 40% improvement.</p>
+                            <div class="update-footer">
+                                <a href="#" class="read-more">Read Full Article →</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="update-item">
-                        <div class="update-date">April 2024</div>
-                        <h3>Neuroplasticity and Brain Healing</h3>
-                        <p>Exciting findings on how the brain can reorganize itself after injury...</p>
-                        <a href="#" class="read-more">Read More →</a>
+                    <div class="update-item" style="--item-delay: 0.3s">
+                        <div class="update-timeline">
+                            <div class="timeline-marker"></div>
+                        </div>
+                        <div class="update-content">
+                            <div class="update-header">
+                                <span class="update-date">📅 April 2024</span>
+                                <span class="update-category">Neurology</span>
+                            </div>
+                            <h3>Neuroplasticity and Brain Healing Innovation</h3>
+                            <p>Exciting findings on how the brain can reorganize itself after injury, opening new possibilities for stroke and trauma recovery.</p>
+                            <div class="update-footer">
+                                <a href="#" class="read-more">Read Full Article →</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="update-item">
-                        <div class="update-date">March 2024</div>
-                        <h3>Metabolic Health Breakthrough</h3>
-                        <p>New understanding of metabolic processes and implications for diabetes management...</p>
-                        <a href="#" class="read-more">Read More →</a>
+                    <div class="update-item" style="--item-delay: 0.4s">
+                        <div class="update-timeline">
+                            <div class="timeline-marker"></div>
+                        </div>
+                        <div class="update-content">
+                            <div class="update-header">
+                                <span class="update-date">📅 March 2024</span>
+                                <span class="update-category">Metabolism</span>
+                            </div>
+                            <h3>Metabolic Health and Diabetes Management</h3>
+                            <p>New understanding of metabolic processes with implications for improved diabetes management and prevention strategies.</p>
+                            <div class="update-footer">
+                                <a href="#" class="read-more">Read Full Article →</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
