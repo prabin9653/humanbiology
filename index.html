@@ -1,1 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Biology - Interactive Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="https://via.placeholder.com/60" alt="Human Biology Logo" class="logo">
+                <h1 class="platform-name">Human Biology</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#" data-section="home" class="nav-link active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Body Systems ▼</a>
+                        <div class="dropdown-menu">
+                            <a href="#" data-section="system" data-system="basic">Basic Concepts</a>
+                            <a href="#" data-section="system" data-system="growth">Growth, Development & Genetics</a>
+                            <a href="#" data-section="system" data-system="immune">Immune System</a>
+                            <a href="#" data-section="system" data-system="nervous">Autonomic Nervous System</a>
+                            <a href="#" data-section="system" data-system="integumentary">Integumentary System</a>
+                            <a href="#" data-section="system" data-system="musculo">Musculo-skeletal System</a>
+                            <a href="#" data-section="system" data-system="haemopoietic">Haemopoietic System</a>
+                            <a href="#" data-section="system" data-system="respiratory">Respiratory System</a>
+                            <a href="#" data-section="system" data-system="cardiovascular">Cardiovascular System</a>
+                            <a href="#" data-section="system" data-system="gastrointestinal">Gastrointestinal System</a>
+                            <a href="#" data-section="system" data-system="hepatobiliary">Hepatobiliary System</a>
+                            <a href="#" data-section="system" data-system="renal">Renal & Electrolyte System</a>
+                            <a href="#" data-section="system" data-system="endocrine">Endocrine & Metabolism</a>
+                            <a href="#" data-section="system" data-system="reproductive">Reproductive System</a>
+                            <a href="#" data-section="system" data-system="cns">CNS & Special Senses</a>
+                        </div>
+                    </li>
+                    <li><a href="#" data-section="quiz" class="nav-link">Quizzes</a></li>
+                    <li><a href="#" data-section="revision" class="nav-link">Quick Revision</a></li>
+                    <li><a href="#" data-section="updates" class="nav-link">Latest Updates</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section-content active">
+            <div class="hero">
+                <h2>Welcome to Human Biology</h2>
+                <p>Your Complete Interactive Learning Platform for Medical Students</p>
+                <div class="hero-cards">
+                    <div class="card" onclick="navigateToSection('system', 'basic')">
+                        <h3>📚 Body Systems</h3>
+                        <p>Explore 15 comprehensive body systems with detailed content</p>
+                    </div>
+                    <div class="card" onclick="navigateToSection('quiz')">
+                        <h3>✅ Quizzes</h3>
+                        <p>Test your knowledge with interactive quizzes</p>
+                    </div>
+                    <div class="card" onclick="navigateToSection('revision')">
+                        <h3>🎯 Quick Revision</h3>
+                        <p>Quick revision notes for fast learning</p>
+                    </div>
+                    <div class="card" onclick="navigateToSection('updates')">
+                        <h3>📰 Updates</h3>
+                        <p>Stay updated with latest medical findings</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Body Systems Section -->
+        <section id="system" class="section-content">
+            <div class="system-container">
+                <div class="system-sidebar">
+                    <h3>Body Systems</h3>
+                    <ul class="system-list">
+                        <li><a href="#" data-system="basic">Basic Concepts</a></li>
+                        <li><a href="#" data-system="growth">Growth, Development & Genetics</a></li>
+                        <li><a href="#" data-system="immune">Immune System</a></li>
+                        <li><a href="#" data-system="nervous">Autonomic Nervous System</a></li>
+                        <li><a href="#" data-system="integumentary">Integumentary System</a></li>
+                        <li><a href="#" data-system="musculo">Musculo-skeletal System</a></li>
+                        <li><a href="#" data-system="haemopoietic">Haemopoietic System</a></li>
+                        <li><a href="#" data-system="respiratory">Respiratory System</a></li>
+                        <li><a href="#" data-system="cardiovascular">Cardiovascular System</a></li>
+                        <li><a href="#" data-system="gastrointestinal">Gastrointestinal System</a></li>
+                        <li><a href="#" data-system="hepatobiliary">Hepatobiliary System</a></li>
+                        <li><a href="#" data-system="renal">Renal & Electrolyte System</a></li>
+                        <li><a href="#" data-system="endocrine">Endocrine & Metabolism</a></li>
+                        <li><a href="#" data-system="reproductive">Reproductive System</a></li>
+                        <li><a href="#" data-system="cns">CNS & Special Senses</a></li>
+                    </ul>
+                </div>
+                <div class="system-content">
+                    <div id="system-display" class="content-display">
+                        <h2 id="system-title">Select a System</h2>
+                        <div id="system-details"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quizzes Section -->
+        <section id="quiz" class="section-content">
+            <div class="quiz-container">
+                <h2>Quizzes</h2>
+                <p class="section-intro">Test your knowledge across different body systems</p>
+                <div class="quiz-grid">
+                    <div class="quiz-card">
+                        <h3>Cardiovascular System Quiz</h3>
+                        <p>10 questions • Intermediate level</p>
+                        <button class="btn-start">Start Quiz</button>
+                    </div>
+                    <div class="quiz-card">
+                        <h3>Respiratory System Quiz</h3>
+                        <p>8 questions • Beginner level</p>
+                        <button class="btn-start">Start Quiz</button>
+                    </div>
+                    <div class="quiz-card">
+                        <h3>Nervous System Quiz</h3>
+                        <p>12 questions • Advanced level</p>
+                        <button class="btn-start">Start Quiz</button>
+                    </div>
+                    <div class="quiz-card">
+                        <h3>Digestive System Quiz</h3>
+                        <p>10 questions • Intermediate level</p>
+                        <button class="btn-start">Start Quiz</button>
+                    </div>
+                    <div class="quiz-card">
+                        <h3>Endocrine System Quiz</h3>
+                        <p>9 questions • Intermediate level</p>
+                        <button class="btn-start">Start Quiz</button>
+                    </div>
+                    <div class="quiz-card">
+                        <h3>Immune System Quiz</h3>
+                        <p>11 questions • Advanced level</p>
+                        <button class="btn-start">Start Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Revision Section -->
+        <section id="revision" class="section-content">
+            <div class="revision-container">
+                <h2>Quick Revision</h2>
+                <p class="section-intro">Quick reference notes for all body systems</p>
+                <div class="revision-grid">
+                    <div class="revision-card">
+                        <h3>Cardiovascular System</h3>
+                        <p>Heart structure, blood flow, cardiac cycle</p>
+                        <a href="#" class="btn-download">View Notes</a>
+                    </div>
+                    <div class="revision-card">
+                        <h3>Respiratory System</h3>
+                        <p>Anatomy, gas exchange, breathing mechanism</p>
+                        <a href="#" class="btn-download">View Notes</a>
+                    </div>
+                    <div class="revision-card">
+                        <h3>Nervous System</h3>
+                        <p>Brain, spinal cord, nerves, synapses</p>
+                        <a href="#" class="btn-download">View Notes</a>
+                    </div>
+                    <div class="revision-card">
+                        <h3>Digestive System</h3>
+                        <p>Organs, digestion process, absorption</p>
+                        <a href="#" class="btn-download">View Notes</a>
+                    </div>
+                    <div class="revision-card">
+                        <h3>Endocrine System</h3>
+                        <p>Hormones, glands, regulation</p>
+                        <a href="#" class="btn-download">View Notes</a>
+                    </div>
+                    <div class="revision-card">
+                        <h3>Skeletal System</h3>
+                        <p>Bones, joints, muscle interactions</p>
+                        <a href="#" class="btn-download">View Notes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Updates Section -->
+        <section id="updates" class="section-content">
+            <div class="updates-container">
+                <h2>Latest Updates</h2>
+                <p class="section-intro">Recent discoveries and updates in medical science</p>
+                <div class="updates-list">
+                    <div class="update-item">
+                        <div class="update-date">June 2024</div>
+                        <h3>New Insights into Immune Response</h3>
+                        <p>Recent studies reveal new mechanisms of T-cell activation in combating viral infections...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                    <div class="update-item">
+                        <div class="update-date">May 2024</div>
+                        <h3>Cardiovascular Disease Prevention</h3>
+                        <p>Breakthrough research on preventive measures and lifestyle modifications for heart health...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                    <div class="update-item">
+                        <div class="update-date">April 2024</div>
+                        <h3>Neuroplasticity and Brain Healing</h3>
+                        <p>Exciting findings on how the brain can reorganize itself after injury...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                    <div class="update-item">
+                        <div class="update-date">March 2024</div>
+                        <h3>Metabolic Health Breakthrough</h3>
+                        <p>New understanding of metabolic processes and implications for diabetes management...</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Human Biology - Interactive Learning Platform. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
